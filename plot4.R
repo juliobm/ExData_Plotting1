@@ -17,6 +17,7 @@ days <- strptime(paste(dplot$Date, dplot$Time), format="%d/%m/%Y %H:%M:%S")
 head(days)
 png(file="plot4.png", width=480, height=480)
 par(mfrow=c(2,2), mar=c(4,4,2,2))
+# 1
 plot(days, dplot$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 # 2
 plot(days, dplot$Voltage, type="l", xlab="datetime", ylab="Voltage")
